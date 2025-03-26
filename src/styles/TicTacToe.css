@@ -6,7 +6,7 @@
 
 body{
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 button{
@@ -43,5 +43,11 @@ button:hover{
     width: fit-content;
     padding: 5px 10px;
     border-radius: 6px;
-    color: ;
+}
+
+@media (max-width: 450px){
+    .container{
+        justify-content:unset;
+        margin-top: 5vh;
+    }
 }
