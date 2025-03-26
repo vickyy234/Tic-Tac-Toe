@@ -61,8 +61,8 @@ function TicTacToe() {
                     </button>
                 ))}
             </div>
-            <h2>{Winner ? (Winner === "Draw" ? "It's a Draw!" : `Winner is ${ Winner }`) : ` Next Turn ${isXTurn ? 'X' : 'O'}`} </h2>
-            <button onClick={handleRestart}>Restart</button>
+            <h2>{Winner ? (Winner === "Draw" ? alert("It's a Draw!") : `Winner is ${ Winner }`) : `${isXTurn ? 'X' : 'O'} Turns`} </h2>
+            <button className='btn' onClick={handleRestart}>Restart</button>
         </div>
     )
 }
