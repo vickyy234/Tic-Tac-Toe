@@ -10,7 +10,7 @@ function TicTacToe() {
             return;
         }
         else if (Winner) {
-            alert("Please Restart the Game!")
+            alert("The winner is " + `${Winner}` + "! Please Restart the Game!")
         }
         else {
             board[index] = isXTurn ? 'X' : 'O';
@@ -61,8 +61,8 @@ function TicTacToe() {
                     </button>
                 ))}
             </div>
-            <h2>{Winner ? (Winner === "Draw" ? alert("It's a Draw! Restart the Game") : `Winner is ${Winner}`) : `${isXTurn ? 'X' : 'O'} Turns`} </h2>
-            <button className='btn' onClick={handleRestart}>Restart</button>
+            <h2 className={Winner ? 'winner' : null}>{Winner ? (Winner === "Draw" ? alert("It's a Draw! Restart the Game") : `Winner is ${Winner}`) : `${isXTurn ? 'X' : 'O'} Player's Turn`} </h2>
+            <button className='btn' onClick={handleRestart}>Restart</button> 
         </div>
     )
 }

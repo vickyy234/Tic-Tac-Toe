@@ -45,6 +45,11 @@ button:hover{
     border-radius: 6px;
 }
 
+.winner {
+    color: rgb(255, 0, 0);
+    font-size: 3rem;
+}
+
 @media (max-width: 450px){
     .container{
         justify-content:unset;
